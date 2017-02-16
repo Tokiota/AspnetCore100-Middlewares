@@ -16,6 +16,7 @@ namespace Tokiota.Middewares.Web
         public void ConfigureServices(IServiceCollection services)
         {
             //Aqui configuramos la Inyeccion de Dependencias
+           
         }
 
       
@@ -27,7 +28,7 @@ namespace Tokiota.Middewares.Web
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello World!");
